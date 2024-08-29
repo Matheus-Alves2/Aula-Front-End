@@ -7,7 +7,12 @@
     <style>
         section {
             display: flex;
-            justify-content: space-around;
+            flex-direction: row;
+            justify-content: flex-start; /*alinhamento da direcao*/
+            align-items: stretch;  /* ao contrario da direcao*/
+            flex-wrap: wrap;
+            
+            
 
             width:700px;
             height:500px;
@@ -17,20 +22,31 @@
         }
 
         article {
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
             width: 100px;
             height: 100px;
             margin-bottom: 10px;
-            background-color: salmon;
+            background-color: red;
             border:1px dashed grey;
             border-radius: 5px;
         }
     </style>
 </head>
 <body>
+    <!--container de flex-->
     <section>
-        <article></article>
-        <article></article>
-        <article></article>
+       <article>Item 1</article>
+       <article>Item 2</article>
+       <article>Item 3</article>
+       <article>Item 4</article>
+       <article>Item 5</article>
+       <article>Item 6</article>
+       <article>Item 7</article>
+       <article>Item 8</article>
+       <article>Item 9</article>
+       <article>Item 10</article>
     </section>
 </body>
 </html>

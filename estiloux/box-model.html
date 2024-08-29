@@ -1,0 +1,91 @@
+ <!DOCTYPE html>
+ <html lang="pt-BR">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+
+    <style>
+        section{
+            display: flex;
+    
+            justify-content:center;
+            
+        }
+        body {
+            background-color: #86b0dd;
+        }
+        article {
+            width: 180px;
+            height: 180px;
+            margin-top: 20px;
+            margin-left: 20px;
+            text-align: center;
+            box-shadow: 2px 2px 5px black;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px dashed black;
+            background-color: wheat;
+        }
+
+        .Caixa-Azul {
+            width: 180px;
+            height: 180px;
+            margin-top: 20px;
+            margin-left: 20px;
+            text-align: center;
+            box-shadow: 2px 2px 5px black;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px dashed black;
+            background-color: rgb(7, 164, 249);
+        }
+        article img {
+
+            width: 40px;
+        }
+        
+        article h1 {
+            text-align: center;
+            font-size: 18px;
+            font-family: "Courier New", 'Courier New', Courier, monospace;
+            text-transform: uppercase;
+        }
+        article p {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 12px;
+        }
+    </style>
+ </head>
+ <body>
+    <section>
+        <article>
+            <img src="./imagens/flash.svg" alt="imagem de um raio">
+            <h1>web design</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </article>
+    
+        <article class="Caixa-Azul">
+            <img src="./imagens/External Link.svg" alt="imagem de um raio">
+            <h1 style="color: white;">Graphics design</h1>
+            <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </article>
+    
+        <article>
+            <img src="./imagens/Opened Folder.svg" alt="imagem de um raio">
+            <h1>UI/IX design</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </article>
+    </section>
+
+    
+ </body>
+ </html>
